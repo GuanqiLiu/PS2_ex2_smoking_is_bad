@@ -1,0 +1,16 @@
+name: smoke  # 虚拟环境的名称
+channels:    # 使用的渠道（例如 conda-forge 和 defaults）
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11  # 指定 Python 版本
+  - pandas
+  - numpy
+  - matplotlib
+  - nbstripout
+  - pip
+  - pip:
+      - pathlib  # 如果 pathlib 在 Python 版本中不是自带的，可以通过 pip 安装
+      - statsmodels
+      - seaborn
+      
